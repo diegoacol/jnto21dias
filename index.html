@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método 21 Dias no Topo | Saia da Procrastinação</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Um método simples e prático para organizar sua rotina, vencer a falta de foco e construir disciplina em 21 dias.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css?v=2.4">
+  
+  <!-- Critical mobile layout fixes to bypass browser caching and ensure perfect alignments -->
+  <style>
+    @media (max-width: 991px) {
+      .offer-pricing-block {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1.5rem !important;
+        padding: 2rem 1.25rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      .pricing-info {
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+      }
+      .pricing-actions {
+        width: 100% !important;
+        align-items: stretch !important;
+      }
+      .offer-pricing-block .btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+      }
+      .offer-box {
+        padding: 3rem 1.25rem !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+      }
+      .offer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+      }
+      .offer-combo-img {
+        max-width: 270px !important;
+        height: auto !important;
+      }
+      
+      /* Mobile Sticky Bar styling and pulse glow */
+      .mobile-sticky-bar {
+        padding: 0.8rem 1.25rem !important;
+      }
+      .sticky-bar-label {
+        font-size: 0.7rem !important;
+      }
+      .sticky-bar-value {
+        font-size: 1.35rem !important;
+      }
+      .mobile-sticky-bar .btn {
+        padding: 0.75rem 1.5rem !important;
+        font-size: 0.8rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.06em !important;
+        border-radius: 50px !important;
+        white-space: nowrap !important;
+        box-shadow: 0 4px 15px rgba(223, 186, 107, 0.3) !important;
+        animation: pulse-gold 2.2s infinite !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      }
+    }
+    
+    @keyframes pulse-gold {
+      0% {
+        box-shadow: 0 4px 15px rgba(223, 186, 107, 0.3);
+      }
+      70% {
+        box-shadow: 0 4px 15px rgba(223, 186, 107, 0.3), 0 0 0 10px rgba(223, 186, 107, 0);
+      }
+      100% {
+        box-shadow: 0 4px 15px rgba(223, 186, 107, 0.3), 0 0 0 0 rgba(223, 186, 107, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tech-grid-bg"></div>
+
+  <!-- 1. HEADER FIXO -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo-container" id="header-logo-link">
+        <img src="assets/logo.png" alt="JNTO Logo" class="logo-img" id="header-logo">
+      </a>
+      
+      <!-- Navegação Desktop -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#metodo" class="nav-link" id="nav-link-metodo">Método</a>
+        <a href="#recebe" class="nav-link" id="nav-link-recebe">O que recebe</a>
+        <a href="#bonus" class="nav-link" id="nav-link-bonus">Bônus</a>
+        <a href="#oferta" class="nav-link" id="nav-link-oferta">Oferta</a>
+      </nav>
+      
+      <div class="header-cta" id="header-cta-container">
+        <a href="#oferta" class="btn btn-primary btn-sm checkout-btn" id="header-cta-btn">Começar agora</a>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="badge-gold" id="badge-acesso-imediato">Acesso imediato</span>
+            <span class="badge-gold" id="badge-oferta-especial">De R$47 por R$27</span>
+          </div>
+          <h1 class="hero-title" id="hero-headline">
+            Saia da procrastinação e construa <span class="gold-text">disciplina em 21 dias.</span>
+          </h1>
+          <p class="hero-subtitle" id="hero-subheadline">
+            Um método simples e prático para organizar sua rotina, vencer a falta de foco e continuar mesmo quando a motivação desaparecer.
+          </p>
+          <div class="hero-action">
+            <a href="#oferta" class="btn btn-primary checkout-btn" id="hero-cta-button">Quero começar agora</a>
+          </div>
+          <p class="hero-footer-text" id="hero-footer-notes">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Pagamento único • acesso imediato • material digital
+          </p>
+        </div>
+        <div class="hero-media">
+          <div class="hero-mockup-wrapper">
+             <!-- Mockup Produto Principal (Ebook) -->
+             <img src="assets/product-mockup.png" alt="Método 21 Dias no Topo Ebook" id="hero-combo-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SEÇÃO DE DOR -->
+  <section class="pain-section section-padding" id="dor">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 id="pain-title">Você começa, mas <span class="gold-text">não continua?</span></h2>
+        <p id="pain-desc">Você sabe o que precisa fazer, mas adia. Começa motivado, perde o foco, sente culpa e promete que segunda-feira será diferente.</p>
+      </div>
+      <div class="pain-grid">
+        <!-- Card 1 -->
+        <div class="pain-card" id="pain-card-1">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/consistencia.svg" alt="Ícone Consistência" class="pain-icon">
+          </div>
+          <h3>Você começa animado, mas abandona rápido</h3>
+          <p>O entusiasmo inicial desaparece em poucos dias, deixando projetos pelo caminho.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="pain-card" id="pain-card-2">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/distracao.svg" alt="Ícone Distração" class="pain-icon">
+          </div>
+          <h3>O celular rouba seu foco</h3>
+          <p>Notificações e redes sociais consomem as horas mais produtivas do seu dia sem você perceber.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="pain-card" id="pain-card-3">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/foco.svg" alt="Ícone Foco" class="pain-icon">
+          </div>
+          <h3>Você depende de motivação para agir</h3>
+          <p>Fica esperando o "momento perfeito" ou a vontade chegar para finalmente sentar e trabalhar.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="pain-card" id="pain-card-4">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/retomada.svg" alt="Ícone Retomada" class="pain-icon">
+          </div>
+          <h3>Qualquer falha vira abandono</h3>
+          <p>Basta um dia de deslize ou imprevisto para você desistir de toda a semana.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="pain-card" id="pain-card-5">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/agenda.svg" alt="Ícone Agenda" class="pain-icon">
+          </div>
+          <h3>Sua rotina parece sempre no improviso</h3>
+          <p>Você apaga incêndios o dia todo e chega ao fim da noite com a sensação de não ter feito nada.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="pain-card" id="pain-card-6">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/checklist.svg" alt="Ícone Acúmulo de Informação" class="pain-icon">
+          </div>
+          <h3>Overdose de informação e pouca ação</h3>
+          <p>Você consome livros, vídeos e dicas de produtividade, mas continua travado na hora de aplicar o conhecimento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SEÇÃO DE VIRADA -->
+  <section class="shift-section section-padding" id="virada">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 id="shift-title">Motivação anima. <span class="gold-text">Método sustenta.</span></h2>
+        <p id="shift-desc">O problema não é falta de potencial. O problema é tentar vencer a procrastinação só na força de vontade. O Método 21 Dias no Topo te entrega um sistema simples para agir com clareza, prioridade e retomada.</p>
+      </div>
+      <div class="shift-grid">
+        <div class="shift-flow" id="shift-flow-container">
+          <!-- Passo 1 -->
+          <div class="flow-step" id="flow-step-1">
+            <div class="flow-step-number">01</div>
+            <span class="flow-step-title">Clareza</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <!-- Passo 2 -->
+          <div class="flow-step" id="flow-step-2">
+            <div class="flow-step-number">02</div>
+            <span class="flow-step-title">Prioridade</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <!-- Passo 3 -->
+          <div class="flow-step" id="flow-step-3">
+            <div class="flow-step-number">03</div>
+            <span class="flow-step-title">Execução</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <!-- Passo 4 -->
+          <div class="flow-step" id="flow-step-4">
+            <div class="flow-step-number">04</div>
+            <span class="flow-step-title">Retomada</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <!-- Passo 5 -->
+          <div class="flow-step" id="flow-step-5">
+            <div class="flow-step-number">05</div>
+            <span class="flow-step-title">Consistência</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SEÇÃO "O QUE É O MÉTODO" -->
+  <section class="about-section section-padding" id="metodo">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 id="about-title">O que é o <span class="gold-text">Método 21 Dias no Topo?</span></h2>
+        <p id="about-desc">É um método digital direto e prático para quem quer parar de começar e parar. Ele mostra como identificar seus padrões de procrastinação, organizar sua rotina com a Agenda 70%, proteger blocos de foco e voltar rápido quando falhar.</p>
+      </div>
+      <div class="about-grid">
+        <!-- Card 1 -->
+        <div class="card-premium about-card" id="about-card-1">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/clareza.svg" alt="Ícone Clareza">
+          </div>
+          <h3>Clareza</h3>
+          <p>Entenda o que está te travando e quais padrões de comportamento precisam ser desfeitos para liberar sua produtividade.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-premium about-card" id="about-card-2">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/execucao.svg" alt="Ícone Execução">
+          </div>
+          <h3>Execução</h3>
+          <p>Organize sua rotina com prioridade real através da Agenda 70% e de blocos de foco blindados contra distração.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card-premium about-card" id="about-card-3">
+          <div class="pain-icon-wrapper">
+            <img src="assets/icons/consistencia.svg" alt="Ícone Consistência">
+          </div>
+          <h3>Consistência</h3>
+          <p>Aprenda a estratégia de retomada para voltar ao trilho imediatamente quando falhar, rompendo o ciclo de recomeços eternos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SEÇÃO "O QUE VOCÊ RECEBE" -->
+  <section class="includes-section section-padding" id="recebe">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 id="includes-title">O que você recebe ao <span class="gold-text">entrar no Método</span></h2>
+        <p id="includes-desc">Uma estrutura completa pensada para o homem moderno que deseja agir com disciplina extrema.</p>
+      </div>
+      <div class="includes-grid">
+        
+        <!-- Produto Principal -->
+        <div class="card-premium includes-card" id="includes-card-main">
+          <div class="includes-card-header">
+            <div class="badge-gold">PRODUTO PRINCIPAL</div>
+            <h3 class="includes-card-title">Método 21 Dias no Topo</h3>
+            <p>O núcleo estratégico da sua transformação de rotina.</p>
+          </div>
+          <ul class="includes-list">
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Aulas curtas ou textos explicativos</h4>
+                <p>Direto ao ponto, sem enrolação teórica para poupar seu tempo.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Plano de ação passo a passo</h4>
+                <p>O que fazer exatamente do dia 1 ao dia 21 para programar seus hábitos.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Exemplos práticos de aplicação</h4>
+                <p>Cenários reais e rotinas prontas para você copiar e adaptar.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Rotina 70% (Agenda Inteligente)</h4>
+                <p>Um sistema de organização flexível que funciona mesmo em dias caóticos.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Estratégia de retomada rápida</h4>
+                <p>O protocolo exato para reerguer a disciplina após um dia de falha.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bônus Integrados -->
+        <div class="card-premium includes-card" id="includes-card-bonus">
+          <div class="includes-card-header">
+            <div class="badge-gold" style="border-color: #ff9f43; color: #ff9f43; background: rgba(255,159,67,0.1)">BÔNUS EXCLUSIVO</div>
+            <h3 class="includes-card-title">Planner de Execução</h3>
+            <p>A ferramenta prática de acompanhamento no papel ou tablet.</p>
+          </div>
+          <ul class="includes-list">
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Checklist Diário</h4>
+                <p>O checklist minimalista de tarefas e hábitos de alta prioridade.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Mapa da Procrastinação</h4>
+                <p>Um guia visual para prever gatilhos de distração antes de cair neles.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Plano dos Próximos 30 Dias</h4>
+                <p>O planejamento estratégico para manter o ritmo pós-21 dias.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Controle de Distrações</h4>
+                <p>Planilha de auditoria pessoal de tempo para eliminar gargalos.</p>
+              </div>
+            </li>
+            <li class="includes-item">
+              <span class="includes-item-check">✓</span>
+              <div class="includes-item-text">
+                <h4>Revisões e Acompanhamento Semanal</h4>
+                <p>Templates de auto-análise para avaliar sua evolução técnica.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. SEÇÃO DO BÔNUS DETALHADO -->
+  <section class="bonus-section section-padding" id="bonus">
+    <div class="container">
+      <div class="bonus-container-grid">
+        <div class="bonus-mockup">
+          <img src="assets/planner-mockup.png" alt="Planner de Execução 21 Dias no Topo Mockup 3D" id="bonus-planner-image">
+        </div>
+        <div class="bonus-content-wrapper">
+          <span class="badge-gold" id="bonus-badge-title">Bônus Premium</span>
+          <h2>Planner de Execução <span class="gold-text">21 Dias no Topo</span></h2>
+          <p style="color: var(--color-text-gray); margin-bottom: 2rem; font-size: 1.1rem;">
+            O método te mostra o caminho. O planner faz você aplicar. Use o material para acompanhar seus 21 dias, preencher checklists, identificar padrões e manter a execução no papel.
+          </p>
+          <div class="bonus-bullets">
+            <div class="bonus-bullet-card">
+              <h4>Checklist Diário</h4>
+              <p>Clareza diária sobre quais batalhas você precisa vencer.</p>
+            </div>
+            <div class="bonus-bullet-card">
+              <h4>Mapa da Procrastinação</h4>
+              <p>Mapeamento de desculpas automáticas da mente.</p>
+            </div>
+            <div class="bonus-bullet-card">
+              <h4>Plano dos Próximos 30 Dias</h4>
+              <p>Como continuar escalando seus resultados no longo prazo.</p>
+            </div>
+            <div class="bonus-bullet-card">
+              <h4>Agenda 70%</h4>
+              <p>Estruturação de compromissos sem margem para sobrecarga.</p>
+            </div>
+            <div class="bonus-bullet-card">
+              <h4>Rotina Mínima</h4>
+              <p>Garantia de consistência nos piores dias.</p>
+            </div>
+            <div class="bonus-bullet-card">
+              <h4>Estratégia de Retomada</h4>
+              <p>Plano claro para o dia seguinte de qualquer deslize.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. SEÇÃO "PARA QUEM É" -->
+  <section class="audience-section section-padding" id="para-quem">
+    <div class="container">
+      <div class="audience-grid">
+        
+        <!-- Para quem é -->
+        <div class="audience-box is-for" id="audience-is-for">
+          <h3>Esse método é <span class="gold-text">para você se...</span></h3>
+          <ul class="audience-list">
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <div class="audience-item-text">Você começa projetos, mas não termina</div>
+                <div class="audience-item-desc">Tem gavetas cheias de ideias brilhantes que nunca saíram do papel.</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <div class="audience-item-text">Você sente que poderia render muito mais</div>
+                <div class="audience-item-desc">Sabe do seu potencial intelectual, mas se vê estagnado no mesmo nível.</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <div class="audience-item-text">Você se perde em distrações constantes</div>
+                <div class="audience-item-desc">Passa horas rodando o feed de redes sociais quando deveria estar executando.</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <div class="audience-item-text">Você vive esperando motivação</div>
+                <div class="audience-item-desc">Fica travado porque só trabalha quando "está com vontade".</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <div class="audience-item-text">Você quer uma rotina simples e possível</div>
+                <div class="audience-item-desc">Cansado de cronogramas perfeitos e irreais de internet que quebram no primeiro imprevisto.</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <div class="audience-item-text">Você quer parar de recomeçar toda segunda</div>
+                <div class="audience-item-desc">Busca consistência verdadeira, livre de picos e vales de rendimento.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 9. SEÇÃO "PARA QUEM NÃO É" -->
+        <div class="audience-box is-not" id="audience-is-not">
+          <h3>Esse método <span class="gold-text">NÃO é para quem...</span></h3>
+          <ul class="audience-list">
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <div>
+                <div class="audience-item-text">Procura fórmula mágica ou milagre</div>
+                <div class="audience-item-desc">Acha que basta ler o material digital para a vida mudar sem nenhum esforço.</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <div>
+                <div class="audience-item-text">Quer mudar tudo sem aplicar nada</div>
+                <div class="audience-item-desc">Busca apenas colecionar mais informações sem colocar nada em prática na rotina.</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <div>
+                <div class="audience-item-text">Quer só consumir mais conteúdo passivamente</div>
+                <div class="audience-item-desc">Prefere assistir a aulas longas de 2 horas em vez de focar no plano de ação prático.</div>
+              </div>
+            </li>
+            <li class="audience-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <div>
+                <div class="audience-item-text">Não quer assumir responsabilidade</div>
+                <div class="audience-item-desc">Prefere culpar as circunstâncias do dia a dia a seguir um método e ser consistente.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. SEÇÃO DE COMPARAÇÃO -->
+  <section class="comparison-section section-padding" id="antes-depois">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 id="comparison-title">Antes e depois do <span class="gold-text">Método</span></h2>
+        <p id="comparison-desc">Veja o que muda em sua vida prática ao aplicar a rotina estruturada de 21 dias.</p>
+      </div>
+      
+      <div class="comparison-table">
+        <!-- Sem Método -->
+        <div class="comparison-column before" id="comparison-before">
+          <div class="comparison-col-header">Sem Método</div>
+          <ul class="comparison-list">
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Rotina inteiramente no improviso e reativa</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Excesso de distração e perda de horas úteis</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Sentimento de culpa profunda ao falhar</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Dependência total de motivação passageira</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Recomeços infinitos a cada início de semana</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Com Método -->
+        <div class="comparison-column after" id="comparison-after">
+          <div class="comparison-col-header">Com Método</div>
+          <ul class="comparison-list">
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Clareza sobre prioridades reais do dia</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Execução blindada com a Agenda 70%</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Proteção e foco em blocos de tempo restritos</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Retomada rápida sem perder a consistência</span>
+            </li>
+            <li class="comparison-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Consistência real baseada em hábitos consolidados</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 11. SEÇÃO DA OFERTA PRINCIPAL -->
+  <section class="offer-section section-padding" id="oferta">
+    <div class="container">
+      <div class="offer-box">
+        <div class="offer-grid">
+          
+          <!-- Coluna 1: Imagem do Combo Grande -->
+          <div class="offer-media-col" id="offer-media-container">
+            <img src="assets/combo-mockup.png" alt="Combo Método 21 Dias no Topo" class="offer-combo-img" id="offer-combo-image-el">
+          </div>
+
+          <!-- Coluna 2: Detalhes, Checklist e Preço Integrado -->
+          <div class="offer-details-col">
+            <span class="offer-badge" id="offer-badge-element">OFERTA DE LANÇAMENTO</span>
+            <h3 id="offer-headline">Comece hoje o Método 21 Dias no Topo</h3>
+            <p class="offer-subtitle">
+              Tenha acesso imediato a todo o material do método mais o planner digital exclusivo de acompanhamento.
+            </p>
+            
+            <ul class="offer-inclusions">
+              <li class="offer-inclusion-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Método 21 Dias no Topo (Ebook Base)</span>
+              </li>
+              <li class="offer-inclusion-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Planner de Execução 21 Dias no Topo</span>
+              </li>
+              <li class="offer-inclusion-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Checklist diário em PDF</span>
+              </li>
+              <li class="offer-inclusion-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Mapa da procrastinação</span>
+              </li>
+              <li class="offer-inclusion-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Plano dos próximos 30 dias</span>
+              </li>
+              <li class="offer-inclusion-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Estratégia de retomada</span>
+              </li>
+            </ul>
+
+            <!-- Bloco de Preço Integrado (Horizontal) -->
+            <div class="offer-pricing-block" id="offer-pricing-block-el">
+              <div class="pricing-info">
+                <span class="price-anchor">De R$ 47</span>
+                <div class="price-wrapper">
+                  <span class="price-currency">R$</span>
+                  <span class="price-main gold-text">27</span>
+                </div>
+                <span class="price-period">Pagamento Único</span>
+              </div>
+              
+              <div class="pricing-actions">
+                <a href="#" class="btn btn-primary checkout-btn" id="offer-buy-btn">Quero começar agora</a>
+                <p class="offer-guarantee-text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  Acesso imediato • Material digital
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. GARANTIA -->
+  <section class="guarantee-section section-padding" id="garantia">
+    <div class="container">
+      <div class="guarantee-box">
+        <img src="assets/guarantee-seal.png" alt="Selo de 7 Dias de Garantia" class="guarantee-seal-img" id="guarantee-seal">
+        <div class="guarantee-text-wrapper">
+          <h3 id="guarantee-title">Garantia incondicional de <span class="gold-text">7 dias</span></h3>
+          <p id="guarantee-desc">Você tem 7 dias inteiros para acessar o material do método e do planner. Se por qualquer motivo entender que ele não faz sentido para a sua realidade ou rotina, pode solicitar reembolso integral de forma rápida e segura diretamente pela plataforma de pagamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FAQ -->
+  <section class="faq-section section-padding" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 id="faq-title">Perguntas <span class="gold-text">frequentes</span></h2>
+        <p id="faq-desc">Tire suas dúvidas antes de começar sua jornada ao topo.</p>
+      </div>
+
+      <div class="faq-wrapper">
+        <!-- Item 1 -->
+        <div class="faq-item" id="faq-item-1">
+          <button class="faq-question">
+            <span>O acesso é imediato?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim. Assim que a sua compra for confirmada pela plataforma de pagamento, você receberá instantaneamente um e-mail com os dados de acesso a todo o material do método e dos bônus.
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="faq-item" id="faq-item-2">
+          <button class="faq-question">
+            <span>O material é digital?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim, o Método 21 Dias no Topo e o Planner de Execução são materiais 100% digitais. Você pode baixá-los para ler e aplicar em seu smartphone, tablet ou computador. Você também tem a opção de imprimir o planner caso prefira preencher fisicamente.
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="faq-item" id="faq-item-3">
+          <button class="faq-question">
+            <span>Funciona para quem procrastina muito?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! O método foi desenhado especificamente para pessoas com alta tendência à procrastinação. Não dependemos de discursos de "força de vontade pura", mas sim de um sistema de clareza mental e barreiras ambientais à distração que facilitam a ação.
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="faq-item" id="faq-item-4">
+          <button class="faq-question">
+            <span>Preciso assistir aulas longas?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Não. O método é enxuto, prático e focado na ação rápida. O conteúdo é entregue em formato direto, com plano de ação pronto e checklists para que você gaste seu tempo executando suas prioridades reais, não assistindo a telas por horas.
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="faq-item" id="faq-item-5">
+          <button class="faq-question">
+            <span>Como recebo o produto?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Você receberá os links para download do material em PDF e arquivos complementares diretamente no seu e-mail cadastrado na hora da compra. O envio é automático e seguro.
+            </div>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="faq-item" id="faq-item-6">
+          <button class="faq-question">
+            <span>Posso acessar pelo celular?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Com certeza. Todos os arquivos em PDF estão formatados com layout responsivo e limpo, proporcionando uma leitura agradável e fluida diretamente na tela do seu aparelho celular.
+            </div>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="faq-item" id="faq-item-7">
+          <button class="faq-question">
+            <span>Tem garantia?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim, o produto conta com uma garantia incondicional de 7 dias respaldada pela legislação. Se por qualquer motivo não ficar satisfeito com o material nos primeiros 7 dias após a compra, nós devolveremos o seu dinheiro.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. CTA FINAL -->
+  <section class="final-cta-section section-padding text-center" id="cta-final">
+    <div class="container">
+      <div class="final-cta-box">
+        <h2 id="final-cta-title">O topo não é um lugar.<br class="desktop-only"> <span class="gold-text">É uma direção.</span></h2>
+        <p id="final-cta-desc">Você pode esperar a próxima segunda-feira ou pode começar agora com um método simples para organizar sua rotina e voltar de vez para o caminho da consistência.</p>
+        <a href="#" class="btn btn-primary checkout-btn" id="final-cta-buy-btn">Quero começar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. RODAPÉ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo-container">
+          <img src="assets/logo.png" alt="JNTO Logo" class="logo-img" id="footer-logo">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footer-copyright">© 2026. Todos os direitos reservados.</p>
+        <div class="footer-links" id="footer-links-container">
+          <a href="#" class="footer-link" id="footer-link-terms">Termos de Uso</a>
+          <a href="#" class="footer-link" id="footer-link-privacy">Políticas de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 16. BARRA FIXA MOBILE (R$27 + Botão Comprar) -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <div class="sticky-bar-price">
+      <span class="sticky-bar-label">MÉTODO COMPLETO</span>
+      <span class="sticky-bar-value">R$ 27,00</span>
+    </div>
+    <a href="#" class="btn btn-primary btn-sm checkout-btn" id="sticky-bar-cta-btn">Comprar agora</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
