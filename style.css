@@ -393,8 +393,8 @@ img {
 /* HERO SECTION */
 .hero {
   min-height: 80vh;
-  padding-top: calc(var(--header-height) + 5.5rem);
-  padding-bottom: 5.5rem;
+  padding-top: calc(var(--header-height) + 8.5rem);
+  padding-bottom: 8.5rem;
   background-image: 
     linear-gradient(to right, rgba(3, 3, 3, 0.96) 30%, rgba(3, 3, 3, 0.5) 70%, rgba(3, 3, 3, 0.85) 100%), 
     url('assets/hero-bg.png');
@@ -1747,8 +1747,8 @@ img {
   }
   
   .hero {
-    padding-top: calc(var(--header-height) + 3.5rem) !important;
-    padding-bottom: 3.5rem !important;
+    padding-top: calc(var(--header-height) + 4.5rem) !important;
+    padding-bottom: 4.5rem !important;
   }
   
   .hero-title {
